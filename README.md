@@ -1,6 +1,6 @@
-## Alpine-lua image
+## LUA image
 
-Image alpine-lua is a small alpine image with LUA installed.
+Image 'lua' is a small image with LUA installed.
 
 This image is primarily used as a small runtime environment for dynamically/"mostly statically" linked go.
 This image does not come with luarocks and is not specifically built for LUA development.
@@ -25,7 +25,7 @@ Required inputs:
 * LUA_SHA1:  
   SHA1 of the lua tarball  
   Find sha's at "https://www.lua.org/ftp/"
-  
+
 Don't pass in other arguments. They may be removed without warning.
 
 ## multidimension script
