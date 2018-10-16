@@ -28,5 +28,16 @@ Required inputs:
 
 Don't pass in other arguments. They may be removed without warning.
 
-## multidimension script
+## multidimension.py script
 The helper script multidimension.py simplifies creating an include matrix for the inputs to a build tool.
+
+## Rebuild instructions
+
+#### LUA version update
+Open `multidimension.py` and add the new lua versions and sha1's to the lua_include list.
+Then follow the steps in [Alpine version update](README.md#Alpine version update).
+
+#### Alpine version update
+Recreate the matrix of environmental variables with `python3 multidimension.py`.
+
+Then use that matrix to create one or all of the images with those inputs.
