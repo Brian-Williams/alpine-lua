@@ -10,7 +10,7 @@ This image installs LUA to environmental variable "LUA_DIR".
 A simple use case may be:
 ```Dockerfile
 ARG REPO
-FROM $REPO/alpine-lua:alpine3.8-lua5.3.4
+FROM $REPO/lua:alpine3.8-lua5.3.4
 
 RUN env CGO_CFLAGS="-I/${LUA_DIR}/lib" go build -o /app
 CMD ["/app"]
