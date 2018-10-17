@@ -10,7 +10,7 @@ This image installs LUA to environmental variable "LUA_DIR".
 A simple use case may be:
 ```Dockerfile
 ARG REPO
-FROM $REPO/lua:alpine3.8-lua5.3.4
+FROM $REPO/lua:5.3.4-alpine3.8
 
 RUN env CGO_CFLAGS="-I/${LUA_DIR}/lib" go build -o /app
 CMD ["/app"]
@@ -41,3 +41,15 @@ Then follow the steps in [Alpine version update](README.md#Alpine version update
 Recreate the matrix of environmental variables with `python3 multidimension.py`.
 
 Then use that matrix to create one or all of the images with those inputs.
+
+## Tag names
+The tag name always starts with the LUA version.
+
+e.x. tag `5.3.4`
+
+The OS follows the version delimited by a '-'.
+
+e.x. tag `5.3.4-alpine3.8`
+
+Dropping a major, minor, or patch implies `>= V.N, == V.*` where V is
+the preceding semantic version.

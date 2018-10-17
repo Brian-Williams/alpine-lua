@@ -45,7 +45,7 @@ matrix = ["matrix:",
           "  include:"]
 
 for l, a in itertools.product(luas, alpines):
-    tag = f"alpine{a}-lua{l.version}"
+    tag = f"{l.version}-alpine{a}"
     matrix.append(f"  - name: {tag}")
     matrix.append(f"    env: {BUILD_LUA_VERSION}={l.version} {BUILD_LUA_SHA1}={l.sha1} {BUILD_ALPINE_VERSION}={a} "
                   f"{BUILD_TAG}={tag}")
