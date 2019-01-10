@@ -5,14 +5,14 @@ services:
 
 matrix:
   include:
-  - name: 5.3.4-alpine3.7
-    env: LUA_VERSION=5.3.4 LUA_SHA1=79790cfd40e09ba796b01a571d4d63b52b1cd950 ALPINE_VERSION=3.7 TAG=5.3.4-alpine3.7
-  - name: 5.3.4-alpine3.8
-    env: LUA_VERSION=5.3.4 LUA_SHA1=79790cfd40e09ba796b01a571d4d63b52b1cd950 ALPINE_VERSION=3.8 TAG=5.3.4-alpine3.8
-  - name: 5.2.4-alpine3.7
-    env: LUA_VERSION=5.2.4 LUA_SHA1=ef15259421197e3d85b7d6e4871b8c26fd82c1cf ALPINE_VERSION=3.7 TAG=5.2.4-alpine3.7
-  - name: 5.2.4-alpine3.8
-    env: LUA_VERSION=5.2.4 LUA_SHA1=ef15259421197e3d85b7d6e4871b8c26fd82c1cf ALPINE_VERSION=3.8 TAG=5.2.4-alpine3.8
+  - name: v5.3.4-alpine3.7
+    env: LUA_VERSION=5.3.4 LUA_SHA1=79790cfd40e09ba796b01a571d4d63b52b1cd950 ALPINE_VERSION=3.7 TAG=v5.3.4-alpine3.7
+  - name: v5.3.4-alpine3.8
+    env: LUA_VERSION=5.3.4 LUA_SHA1=79790cfd40e09ba796b01a571d4d63b52b1cd950 ALPINE_VERSION=3.8 TAG=v5.3.4-alpine3.8
+  - name: v5.2.4-alpine3.7
+    env: LUA_VERSION=5.2.4 LUA_SHA1=ef15259421197e3d85b7d6e4871b8c26fd82c1cf ALPINE_VERSION=3.7 TAG=v5.2.4-alpine3.7
+  - name: v5.2.4-alpine3.8
+    env: LUA_VERSION=5.2.4 LUA_SHA1=ef15259421197e3d85b7d6e4871b8c26fd82c1cf ALPINE_VERSION=3.8 TAG=v5.2.4-alpine3.8
 
 script:
   - echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
