@@ -38,7 +38,8 @@ def get_tags(repo_name):
 
 # @ commit time versions are: ["3.7", "3.8"]
 # This will also filter non-versioned tags like 'latest', 'edge', 'dev' etc.
-alpines = [tag for tag in get_tags('alpine') if parse_version(tag) >= parse_version(alpine_include_vfloor)]
+# Exclude date versioned alpine like alpine:20200428
+alpines = [tag for tag in get_tags('alpine') if not ('.' not in tag and len(tag) == 8) and parse_version(tag) >= parse_version(alpine_include_vfloor)]
 
 
 matrix = ["matrix:",

@@ -5,14 +5,53 @@ services:
 
 matrix:
   include:
+  - name: v5.3.4-alpine3.10
+    env: LUA_VERSION=5.3.4 LUA_SHA1=79790cfd40e09ba796b01a571d4d63b52b1cd950 ALPINE_VERSION=3.10 TAG=v5.3.4-alpine3.10
+  - name: v5.3.4-alpine3.10.5
+    env: LUA_VERSION=5.3.4 LUA_SHA1=79790cfd40e09ba796b01a571d4d63b52b1cd950 ALPINE_VERSION=3.10.5 TAG=v5.3.4-alpine3.10.5
+  - name: v5.3.4-alpine3.11
+    env: LUA_VERSION=5.3.4 LUA_SHA1=79790cfd40e09ba796b01a571d4d63b52b1cd950 ALPINE_VERSION=3.11 TAG=v5.3.4-alpine3.11
+  - name: v5.3.4-alpine3.12
+    env: LUA_VERSION=5.3.4 LUA_SHA1=79790cfd40e09ba796b01a571d4d63b52b1cd950 ALPINE_VERSION=3.12 TAG=v5.3.4-alpine3.12
+  - name: v5.3.4-alpine3.12.0
+    env: LUA_VERSION=5.3.4 LUA_SHA1=79790cfd40e09ba796b01a571d4d63b52b1cd950 ALPINE_VERSION=3.12.0 TAG=v5.3.4-alpine3.12.0
   - name: v5.3.4-alpine3.7
     env: LUA_VERSION=5.3.4 LUA_SHA1=79790cfd40e09ba796b01a571d4d63b52b1cd950 ALPINE_VERSION=3.7 TAG=v5.3.4-alpine3.7
+  - name: v5.3.4-alpine3.7.3
+    env: LUA_VERSION=5.3.4 LUA_SHA1=79790cfd40e09ba796b01a571d4d63b52b1cd950 ALPINE_VERSION=3.7.3 TAG=v5.3.4-alpine3.7.3
   - name: v5.3.4-alpine3.8
     env: LUA_VERSION=5.3.4 LUA_SHA1=79790cfd40e09ba796b01a571d4d63b52b1cd950 ALPINE_VERSION=3.8 TAG=v5.3.4-alpine3.8
+  - name: v5.3.4-alpine3.8.5
+    env: LUA_VERSION=5.3.4 LUA_SHA1=79790cfd40e09ba796b01a571d4d63b52b1cd950 ALPINE_VERSION=3.8.5 TAG=v5.3.4-alpine3.8.5
+  - name: v5.3.4-alpine3.9
+    env: LUA_VERSION=5.3.4 LUA_SHA1=79790cfd40e09ba796b01a571d4d63b52b1cd950 ALPINE_VERSION=3.9 TAG=v5.3.4-alpine3.9
+  - name: v5.3.4-alpine3.9.6
+    env: LUA_VERSION=5.3.4 LUA_SHA1=79790cfd40e09ba796b01a571d4d63b52b1cd950 ALPINE_VERSION=3.9.6 TAG=v5.3.4-alpine3.9.6
+  - name: v5.2.4-alpine3.10
+    env: LUA_VERSION=5.2.4 LUA_SHA1=ef15259421197e3d85b7d6e4871b8c26fd82c1cf ALPINE_VERSION=3.10 TAG=v5.2.4-alpine3.10
+  - name: v5.2.4-alpine3.10.5
+    env: LUA_VERSION=5.2.4 LUA_SHA1=ef15259421197e3d85b7d6e4871b8c26fd82c1cf ALPINE_VERSION=3.10.5 TAG=v5.2.4-alpine3.10.5
+  - name: v5.2.4-alpine3.11
+    env: LUA_VERSION=5.2.4 LUA_SHA1=ef15259421197e3d85b7d6e4871b8c26fd82c1cf ALPINE_VERSION=3.11 TAG=v5.2.4-alpine3.11
+  - name: v5.2.4-alpine3.11.6
+    env: LUA_VERSION=5.2.4 LUA_SHA1=ef15259421197e3d85b7d6e4871b8c26fd82c1cf ALPINE_VERSION=3.11.6 TAG=v5.2.4-alpine3.11.6
+  - name: v5.2.4-alpine3.12
+    env: LUA_VERSION=5.2.4 LUA_SHA1=ef15259421197e3d85b7d6e4871b8c26fd82c1cf ALPINE_VERSION=3.12 TAG=v5.2.4-alpine3.12
+  - name: v5.2.4-alpine3.12.0
+    env: LUA_VERSION=5.2.4 LUA_SHA1=ef15259421197e3d85b7d6e4871b8c26fd82c1cf ALPINE_VERSION=3.12.0 TAG=v5.2.4-alpine3.12.0
   - name: v5.2.4-alpine3.7
     env: LUA_VERSION=5.2.4 LUA_SHA1=ef15259421197e3d85b7d6e4871b8c26fd82c1cf ALPINE_VERSION=3.7 TAG=v5.2.4-alpine3.7
+  - name: v5.2.4-alpine3.7.3
+    env: LUA_VERSION=5.2.4 LUA_SHA1=ef15259421197e3d85b7d6e4871b8c26fd82c1cf ALPINE_VERSION=3.7.3 TAG=v5.2.4-alpine3.7.3
   - name: v5.2.4-alpine3.8
     env: LUA_VERSION=5.2.4 LUA_SHA1=ef15259421197e3d85b7d6e4871b8c26fd82c1cf ALPINE_VERSION=3.8 TAG=v5.2.4-alpine3.8
+  - name: v5.2.4-alpine3.8.5
+    env: LUA_VERSION=5.2.4 LUA_SHA1=ef15259421197e3d85b7d6e4871b8c26fd82c1cf ALPINE_VERSION=3.8.5 TAG=v5.2.4-alpine3.8.5
+  - name: v5.2.4-alpine3.9
+    env: LUA_VERSION=5.2.4 LUA_SHA1=ef15259421197e3d85b7d6e4871b8c26fd82c1cf ALPINE_VERSION=3.9 TAG=v5.2.4-alpine3.9
+  - name: v5.2.4-alpine3.9.6
+    env: LUA_VERSION=5.2.4 LUA_SHA1=ef15259421197e3d85b7d6e4871b8c26fd82c1cf ALPINE_VERSION=3.9.6 TAG=v5.2.4-alpine3.9.6
+
 
 script:
   - echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
